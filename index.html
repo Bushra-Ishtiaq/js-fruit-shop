@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h1>Fruit shop</h1>
+
+        <div id="head">
+            <h2>I have Rs. </h2>
+            <input id="amount" type="number" value="">
+        </div>
+        <div id="heading">
+            <h3>
+                Your total is Rs.
+            </h3>
+            <input type="number" value="0" id="bill">
+        </div>
+
+        <section class="items">
+            <div class="apple">
+                <p>Rs. 10</p>
+                <figure>
+                    <img src="apple_PNG12423.png" alt="apple" height="150px" width="150px">
+                </figure>
+                <figcaption> Apple </figcaption>
+                <button onclick="addApple()">+</button>
+                <input type="number" value="0" class="quantity" id="appleitem">
+                <button onclick="minusApple ()">-</button>
+
+            </div>
+
+            <div class="banana">
+                <p>Rs. 15</p>
+                <figure>
+                    <img src="Banana-PNG.png" alt="Banana" height="150px" width="150px">
+                </figure>
+                <figcaption> Banana </figcaption>
+                <button onclick="addBanana()">+</button>
+                <input type="number" value="0" class="quantity" id="bananaitem">
+                <button onclick="minusBanana()">-</button>
+            </div>
+
+            <div class="orange">
+                <p>Rs. 7</p>
+                <figure>
+                    <img src="orange_PNG809.png" alt="Orange" height="150px" width="150px">
+                </figure>
+                <figcaption> Orange </figcaption>
+                <button onclick=" addOrange() ">+</button>
+                <input type="number" value="0" class="quantity" id="orangeitem">
+                <button onclick="minusOrange()">-</button>
+            </div>
+        </section>
+
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
